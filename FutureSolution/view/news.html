@@ -3,95 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About US</title>
-
-    <link rel="stylesheet" href="..\css\home.css" />
-    <link rel="stylesheet" href="..\css\navBar.css">
-    <link rel="stylesheet" href="..\css\footer.css">
-    <link rel="stylesheet" 
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <div id="navbar"></div>
     
-    <div class="header-container">
-        <h1>About US</h1>
-        <div class="btn-primary">       
-            <a href="contactus.html" class="btn" aria-label="More Details">Contact Us for More Details</a>
+    <div class="container">
+        <h1>Latest News</h1>
+    </div>
+
+    <div class="services-container">
+        <!-- Job Boxes -->
+        <div class="box">
+            <img src="../assets/sap.jpeg" alt="news1">
+            <h3>How SAP’s (SAP) AI Integration is Changing the Mobile Business Experience</h3>
+            <button class="open-popup" data-role="news1">Read More</button>
         </div>
-    </div>
-
-<section class="about" id="about">
-     
-    <div class="about-img">
-        <img src="../assets/whoweare.jpeg" alt="About Us - A team of professionals">
-    </div>
-    <div class="about-text">
-        <h2>Who We Are..?</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem enim optio temporibus et repellendus amet minima iure sapiente nesciunt exercitationem possimus voluptatibus, ad velit molestiae voluptas. Cum optio accusantium autem?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatum ratione quaerat quasi minima ut, doloremque provident minus qui, temporibus animi! Consequatur fugiat adipisci a illo amet. Ipsam, nulla dolore.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui mollitia neque, aperiam alias voluptatum ex obcaecati minus sapiente sequi sit aspernatur minima delectus quisquam quidem doloribus cum tempore quae unde!</p>
-       <br>
-        
-    </div>
-</section>
-<!-- our mission -->
-<section class="about" id="about">
- 
-    
-    <div class="about-text">
-        <h2>Our Vision & Mission</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem enim optio temporibus et repellendus amet minima iure sapiente nesciunt exercitationem possimus voluptatibus, ad velit molestiae voluptas. Cum optio accusantium autem?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatum ratione quaerat quasi minima ut, doloremque provident minus qui, temporibus animi! Consequatur fugiat adipisci a illo amet. Ipsam, nulla dolore.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui mollitia neque, aperiam alias voluptatum ex obcaecati minus sapiente sequi sit aspernatur minima delectus quisquam quidem doloribus cum tempore quae unde!</p>
-       <br>
-        
-    </div>
-    <div class="about-img">
-        <img src="../assets/vision mision.jpeg" alt="">
-    </div>
-</section>
-<!-- our service -->
-<section class="about" id="about">
- 
-    <div class="about-img">
-        <img src="../assets/ourService.jpeg" alt="About Us - A team of professionals">
-    </div>
-    <div class="about-text">
-        <h2>Our Service</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem enim optio temporibus et repellendus amet minima iure sapiente nesciunt exercitationem possimus voluptatibus, ad velit molestiae voluptas. Cum optio accusantium autem?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatum ratione quaerat quasi minima ut, doloremque provident minus qui, temporibus animi! Consequatur fugiat adipisci a illo amet. Ipsam, nulla dolore.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui mollitia neque, aperiam alias voluptatum ex obcaecati minus sapiente sequi sit aspernatur minima delectus quisquam quidem doloribus cum tempore quae unde!</p>
-        <br>
-        
-    </div>
-</section>      
-</div>
-<!-- why choose us -->
-<section class="about" id="about">
-    <div class="about-text">
-        <h2>Why choose us..?</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem enim optio temporibus et repellendus amet minima iure sapiente nesciunt exercitationem possimus voluptatibus, ad velit molestiae voluptas. Cum optio accusantium autem?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatum ratione quaerat quasi minima ut, doloremque provident minus qui, temporibus animi! Consequatur fugiat adipisci a illo amet. Ipsam, nulla dolore.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui mollitia neque, aperiam alias voluptatum ex obcaecati minus sapiente sequi sit aspernatur minima delectus quisquam quidem doloribus cum tempore quae unde!</p>
-       <br>
-        
-    </div>
-    <div class="about-img">
-        <img src="../assets/aboutus.jpg" alt="About Us - A team of professionals">
-    </div>
-   
-</section>
+        <div class="popup" id ="popup">
+            <div class="overlay">
+                <div class="popup-content">
+                    <h2>How SAP’s (SAP) AI Integration is Changing the Mobile Business Experience</h2>
+                    <p>We recently compiled a list of the Top 10 AI Stocks on Latest News and Analyst Ratings. In this article, we are going to take a look at where SAP SE (NYSE:SAP) stands against the other AI stocks. </p>
+                    <p>Hugh Gimber, global market strategist at J.P. Morgan Asset Management, joined CNBC’s Squawk Box Europe to discuss the sectors poised to benefit from the artificial intelligence boom as the dominance of the “Magnificent 7” fades.</p>
+                    <a href="https://www.msn.com/en-us/technology/general/how-sap-s-sap-ai-integration-is-changing-the-mobile-business-experience/ar-AA1vLdMH">Read More</a>
+                <!-- <div class="control">
+                    <button class="close-btn">Close</button>
+                </div> -->
+                </div>
+            </div>
+        </div>
 
 
 
+        <div class="box">
+            <img src="../assets/erp12.jpeg" alt="news12">
+             <h3>Getting The Most Out Of A Smart ERP: 17 Expert Tips</h3>
+            <button class="open-popup" data-role="news12">More Details</button>
+        </div>
+        <div class="popup" id ="popup">
+            <div class="overlay">
+                <div class="popup-content">
+                    <h2>Getting The Most Out Of A Smart ERP: 17 Expert Tips</h2>
+                    <p>For businesses that have invested in a smart enterprise resource planning system, maximizing its potential is critical to ensuring a strong return on investment. These systems are designed to streamline operations and improve decision making, but achieving those results requires strategic implementation and ongoing optimization.</p>
+                    <p>By integrating an ERP system into core workflows and aligning it with long-term business goals, companies can turn it into a powerful tool for driving efficiency and innovation. Below, members of Forbes Technology Council share practical strategies to help you achieve maximum ROI and lasting benefits from your ERP investment.</p>
+                    <a href="https://www.forbes.com/councils/forbestechcouncil/2024/12/03/getting-the-most-out-of-a-smart-erp-17-expert-tips/">Read More</a>
+                    <!-- <div class="control">
+                    <button class="close-btn">Close</button>
+                </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../assets/cloud34.jpeg" alt="cloud34">
+            <h3>Less than a fifth of IT professionals say cloud infrastructure meets their needs</h3>
+            <button class="open-popup" data-role="cloud34">More Details</button>
+        </div>
+        <div class="popup" id ="popup">
+            <div class="overlay">
+                <div class="popup-content">
+                    <h2>Less than a fifth of IT professionals say cloud infrastructure meets their needs</h2>               
+                    <p>Less than one in five (18%) IT professionals believe their present cloud infrastructure satisfies their business needs, indicating a large disconnect between expectations and reality when it comes to cloud adoption.</p>
+                    <p>This is according to new data from SolarWinds, based on a survey of 272 global IT professionals, which shows that despite the cloud’s promises of scalability and cost savings, the reality is mixed for many IT teams: only a quarter of those surveyed (25%) feel their organisation’s approach to the cloud is carefully considered and successful, while 23% admit their hybrid cloud strategy has created an overly complex IT environment. Despite this, less than a quarter (22%) of respondents have invested in external IT services to help with cloud migration strategy.</p>
+                    <a href="https://www.cloudcomputing-news.net/news/less-than-a-fifth-of-it-professionals-say-cloud-infrastructure-meets-their-needs/">Read More</a>
+                    
+                <!-- <div class="control">
+                    <button class="close-btn">Close</button>
+                </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="box">
+            <img src="../assets/UI UX.png" alt="Career - UI/UX Designer">
+            <button class="open-popup" data-role="UI/UX Designer">More Details</button>
+        </div>
+        <div class="popup" id ="popup">
+            <div class="overlay">
+                <div class="popup-content">
+                    <h2>Job Description: Software Engineer</h2>
+                    <p></p>
+                <div class="control">
+                    <button class="close-btn">Close</button>
+                </div>
+                </div>
+            </div>
+        </div> -->
+    </div>   
 
     <div id="footer-container"></div>
 
-    <script src="..\scripts\footer.js"></script>
-    <script src="..\scripts\navbar.js"></script>
+    <script src="../scripts/news.js"></script>
+    <script src="../scripts/footer.js"></script>
+    <script src="../scripts/navbar.js"></script>
+
 </body>
 </html>
-
-

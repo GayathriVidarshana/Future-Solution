@@ -6,7 +6,6 @@
 }
 
 body {
-    /* font-family: 'Arial', sans-serif; */
     font-family: 'cursive';
 }
 
@@ -18,12 +17,14 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #000099;
+    background-color:  #000767;;
     padding: 10px;
-    display: flex; /* Flexbox to align logo and nav */
-    justify-content: space-between; /* Space between logo and nav */
-    align-items: flex-end; /* Align items to the bottom */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    flex-wrap: wrap; 
 }
+
 
 .logo img {
     width: 150px;
@@ -33,7 +34,7 @@ header {
 header nav {
     background-color: rgb(247, 242, 242);
     position: relative;
-    flex-grow: 1; /* Make the nav take the remaining space */
+    flex-grow: 1;
 }
 
 nav ul {
@@ -51,7 +52,7 @@ nav ul li a {
     display: inline-block;
     padding: 10px 20px;
     border-right: 1px solid #444;
-    color: #000099;;
+    color: #000099;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -66,7 +67,7 @@ nav ul li a:hover {
 .navbar li ul.dropdown {
     list-style: none;
     position: absolute;
-    top: 100%; /* Position dropdown below the parent */
+    top: 100%;
     left: 0;
     background-color: #ffffff;
     border: 1px solid #ccc;
@@ -108,26 +109,38 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
-/* Responsive Design (Optional) */
+/* Mobile Navigation: Hamburger Menu */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     nav ul {
         flex-direction: column;
-        align-items: center;
         width: 100%;
+        display: none;
+        text-align: center;
     }
 
     nav ul li {
         width: 100%;
-        text-align: center;
     }
 
     nav ul li ul.dropdown {
         width: 100%;
         position: static;
+    }
+
+    /* Show the navigation when hamburger menu is clicked */
+    nav.active ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        background-color: #000099;
+        padding: 10px;
+        cursor: pointer;
     }
 }
