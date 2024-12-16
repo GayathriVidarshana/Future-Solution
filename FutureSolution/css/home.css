@@ -1,4 +1,8 @@
-
+body {
+    font-family: cursive;
+    padding-top: 60px;
+ 
+}
 .content {
     width: 100%;
     position: absolute;

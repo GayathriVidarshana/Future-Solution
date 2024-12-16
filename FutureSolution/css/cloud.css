@@ -4,6 +4,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
+    background-image: url('../assets/cloudwall.jpg'); 
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    
     color: #333;
     line-height: 1.6;
 }

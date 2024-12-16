@@ -1,0 +1,146 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'cursive';
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color:  #000767;;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    flex-wrap: wrap; 
+}
+
+
+.logo img {
+    width: 150px;
+}
+
+/* Navigation Bar */
+header nav {
+    background-color: rgb(247, 242, 242);
+    position: relative;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-right: 1px solid #444;
+    color: #000099;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #000099;
+}
+
+/* Dropdown Menu */
+.navbar li ul.dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    min-width: 200px;
+    z-index: 1000;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+/* Dropdown Items */
+.navbar li ul.dropdown li {
+    display: block;
+    text-align: left;
+}
+
+.navbar li ul.dropdown li a {
+    padding: 10px 20px;
+    color: #333;
+    border: none;
+    font-size: 14px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.navbar li ul.dropdown li a:hover {
+    background-color: #000099;
+    color: white;
+}
+
+/* Show Dropdown on Hover */
+.navbar li:hover ul.dropdown {
+    display: block;
+}
+
+/* Add Transition for Dropdown */
+.navbar li ul.dropdown {
+    transition: all 0.3s ease;
+}
+
+/* Mobile Navigation: Hamburger Menu */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li ul.dropdown {
+        width: 100%;
+        position: static;
+    }
+
+    /* Show the navigation when hamburger menu is clicked */
+    nav.active ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        background-color: #000099;
+        padding: 10px;
+        cursor: pointer;
+    }
+}

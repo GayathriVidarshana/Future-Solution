@@ -10,7 +10,8 @@ body{
 
 /* Footer Styling */
 footer {
-    background-color: #000767;
+    height: auto;
+    background-color: #0A3981;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -21,7 +22,7 @@ footer {
 
 footer h4 {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
@@ -30,7 +31,7 @@ footer ul {
 }
 
 footer ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 footer ul li a {

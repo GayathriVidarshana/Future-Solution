@@ -1,22 +1,57 @@
-/* General styling */
-body {
-    font-family: Arial, sans-serif;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 20px auto;
+    max-width: 1200px; 
+    padding: 0 20px;
+    font-display: capitalize;
+}
+
+/* Style for the h1 */
+.header-container h1 {
+    font-size: 3rem;
+    color: #000767;
     margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+/* Style for the button */
+.header-container .btn-primary a {
+    background-color: white ;
+    color: #000767;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    border: 1px solid #000767;;
+}
+
+.header-container .btn-primary a:hover {
+    background-color: #000767;
+}
+body {
+    font-family: cursive;
     color: #333;
+    background-image: url('../assets/custWall76.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin: 1rem 0;
-    color: #444;
+    color: #0A3981;
 }
 
 p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #666;
+    color: #0A3981;
 }
 
 .services-container {
@@ -25,7 +60,8 @@ p {
     justify-content: center;
     gap: 1.5rem;
     padding: 2rem;
-    background-color: #fff;
+
+
 }
 
 /* Box styling */
@@ -42,6 +78,7 @@ p {
 
 .box img {
     width: 100%;
+    height: 200px;
     border-radius: 8px;
     margin-bottom: 1rem;
     transition: transform 0.3s ease;

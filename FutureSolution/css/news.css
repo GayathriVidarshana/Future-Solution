@@ -1,9 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'cursive';
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
+    background-image: url('../assets/newswall.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+
 }
 
 h1 {
@@ -19,20 +24,54 @@ p {
     color: #555;
 }
 
-.container {
-    /* max-width: ; */
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Container for h1 and button */
+.header-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out items horizontally */
+    margin: 20px auto;
+    max-width: 1200px; /* Optional: Adjust the width as needed */
+    padding: 0 20px;
+    font-display: capitalize;
 }
+
+/* Style for the h1 */
+.header-container h1 {
+    font-size: 3rem;
+    color: #000767;
+    margin: 0;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+/* Style for the button */
+.header-container .btn-primary a {
+    background-color: white !important;
+    color: #000767;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    border: 1px solid #000767;;
+}
+
+.header-container .btn-primary a:hover {
+    background-color: #000767;
+}
+
 
 .services-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 20px;
+}
+.box h3{
+     
+    font-size: 0.976rem;
+    text-align: justify;
+    color: #000767;
 }
 
 .box {
@@ -43,6 +82,7 @@ p {
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease;
+    
 }
 
 .box:hover {
@@ -65,7 +105,10 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+   
 }
+
+
 
 button:hover {
     background-color: #2980b9;

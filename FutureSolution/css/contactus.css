@@ -1,5 +1,5 @@
 * {
-    font-family: "Arial", sans-serif; /* Changed from cursive for better readability */
+   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,21 +8,47 @@
     list-style: none;
     text-decoration: none;
 }
+body {
+    font-family: cursive;
+    background-color: #333;
+    background-image: url('../assets/contactusWall.jpg'); /* Correct path */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Ensures the background image does not repeat */
+}
 
-/* Page Header */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 20px auto;
+    max-width: 1200px; 
+    padding: 0 20px;
+    font-display: capitalize;
+}
+
+/* Style for the h1 */
+.header-container h1 {
+    font-size: 3rem;
+    color: #000767;
+    margin: 0;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+
 h1 {
     text-align: center;
     margin: 20px 0;
-    color: #333; /* Slightly darker for better contrast */
+    color: #333; 
     font-size: 2.5rem;
 }
 
-/* Container Styles */
 .container-form {
-    max-width: 1100px; /* Adjusted for a more compact view */
+    max-width: 1100px; 
     margin: 20px auto;
     padding: 20px;
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #f8f9fa; 
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -32,16 +58,16 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 20px; /* Added gap for consistent spacing */
+    gap: 20px; 
 }
 
 .col-md-6 {
-    flex: 1 1 calc(50% - 20px); /* Improved column flexibility */
+    flex: 1 1 calc(50% - 20px);
     box-sizing: border-box;
     padding: 10px;
 }
 
-/* Image Styles */
+
 .col-md-6 img {
     width: 100%;
     height: auto;
@@ -49,7 +75,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Styles */
+
 .form-control {
     background: #ffffff;
     border-radius: 8px;
@@ -109,9 +135,9 @@ button[type="submit"]:hover {
 
 /* Contact Information Styles */
 .container {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
+    width: 100%;
+    /* margin: 20px auto;
+    padding: 20px; */
     text-align: center;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -119,7 +145,7 @@ button[type="submit"]:hover {
 }
 
 .container h2 {
-    color: #444;
+    color: #000767;
     margin-bottom: 20px;
     font-size: 1.8rem;
 }
@@ -140,12 +166,12 @@ button[type="submit"]:hover {
 }
 
 .container .col-md-4 h3 {
-    color: #007bff;
+    color: #000767;
     margin-bottom: 10px;
 }
 
 .container .col-md-4 p {
-    color: #555;
+    color: #000767;
     font-size: 1rem;
     line-height: 1.5;
 }

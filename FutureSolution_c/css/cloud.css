@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for h1 and button */
+.header-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out items horizontally */
+    margin: 20px auto;
+    max-width: 1200px; /* Optional: Adjust the width as needed */
+    padding: 0 20px;
+    font-display: capitalize;
+}
+
+/* Style for the h1 */
+.header-container h1 {
+    font-size: 3rem;
+    color: #000767;
+    margin: 0;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+/* Style for the button */
+.header-container .btn-primary a {
+    background-color: white !important;
+    color: #000767;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    border: 1px solid #000767;;
+}
+
+.header-container .btn-primary a:hover {
+    background-color: #000767;
+}
+
+/* 
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #000767;
+    font-size: 3rem;
+    font-family: cursive;
+} */
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+   font-size: 1rem;
+}
+/* .about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #34495e;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: cursive;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about-img {
+    flex: 1;
+    text-align: center;
+}
+
+.about-img img {
+    max-width: 500px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-img,
+    .about-text {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 1.8em;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+}

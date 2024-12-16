@@ -7,22 +7,30 @@
 
 body {
     font-family: 'cursive';
+    margin: 0;
+    padding-top: 150px; /
 }
 
 /* Container */
 .container {
     width: 100%;
     margin: 0 auto;
+    
 }
 
 /* Header Styles */
 header {
-    background-color:  #000767;;
+    background-color: #0A3981;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; 
-    flex-wrap: wrap; 
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: fixed; /* Fix it at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
 }
 
 
@@ -32,9 +40,10 @@ header {
 
 /* Navigation Bar */
 header nav {
-    background-color: rgb(247, 242, 242);
+    background-color: rgb(255, 255, 255);
     position: relative;
     flex-grow: 1;
+   
 }
 
 nav ul {
@@ -56,11 +65,14 @@ nav ul li a {
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    background-color: white;
-    color: #000099;
+    background-color:#001A6E;
+    color:white;
 }
 
 /* Dropdown Menu */
@@ -111,36 +123,30 @@ nav ul li a:hover {
 
 /* Mobile Navigation: Hamburger Menu */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
     nav ul {
         flex-direction: column;
         width: 100%;
-        display: none;
+        display: none; /* Initially hidden */
         text-align: center;
+        background-color: #fff; /* Add background for better visibility */
     }
 
     nav ul li {
         width: 100%;
     }
 
-    nav ul li ul.dropdown {
-        width: 100%;
-        position: static;
-    }
-
-    /* Show the navigation when hamburger menu is clicked */
     nav.active ul {
-        display: flex;
+        display: flex; /* Show navigation when active */
     }
 
     .hamburger {
         display: block;
-        background-color: #000099;
+        background-color: #0A3981;
+        color: white;
         padding: 10px;
         cursor: pointer;
+        border: none;
+        font-size: 1.2rem;
     }
 }
+

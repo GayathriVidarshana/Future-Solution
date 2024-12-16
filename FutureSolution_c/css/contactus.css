@@ -1,0 +1,173 @@
+* {
+    font-family: "Arial", sans-serif; /* Changed from cursive for better readability */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Page Header */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333; /* Slightly darker for better contrast */
+    font-size: 2.5rem;
+}
+
+/* Container Styles */
+.container-form {
+    max-width: 1100px; /* Adjusted for a more compact view */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Added gap for consistent spacing */
+}
+
+.col-md-6 {
+    flex: 1 1 calc(50% - 20px); /* Improved column flexibility */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Image Styles */
+.col-md-6 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-control {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+textarea {
+    resize: none;
+    height: 120px; /* Added fixed height for better design */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Contact Information Styles */
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.container .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container .col-md-4 {
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container .col-md-4 h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.container .col-md-4 p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.container .col-md-4:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        gap: 30px; /* Increased gap for better spacing */
+    }
+
+    .col-md-6,
+    .col-md-4 {
+        flex: 1 1 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
